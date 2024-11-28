@@ -1,0 +1,34 @@
+{
+    "name": "dark-goland-theme",
+    "displayName": "Dark Goland Theme",
+    "description": "A Goland-inspired dark theme for VS Code.",
+    "version": "1.0.0",
+    "publisher": "tofo",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": ["Themes"],
+    "keywords": [
+        "go",
+        "golang",
+        "Goland",
+        "JetBrains",
+        "IntelliJ",
+        "semantic",
+        "highlighting",
+        "dark",
+        "darcula",
+        "darkula",
+        "dracula",
+        "drakula"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Dark Goland Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/dark-goland-theme.json"
+            }
+        ]
+    }
+}
