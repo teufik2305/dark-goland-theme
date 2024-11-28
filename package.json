@@ -4,6 +4,10 @@
     "description": "A Goland-inspired dark theme for VS Code.",
     "version": "1.0.0",
     "publisher": "tofo",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/teufik2305/dark-goland-theme"
+    },
     "engines": {
         "vscode": "^1.21.0"
     },
