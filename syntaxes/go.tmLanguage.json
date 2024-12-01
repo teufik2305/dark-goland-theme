@@ -1872,7 +1872,7 @@
 				},
 				{
 					"comment": "one line - property variables and types",
-					"match": "(?:(?<=\\{)\\s*((?:(?:\\w+\\,\\s*)+)?(?:\\w+\\s+))((?:(?:\\s*(?:[\\*\\[\\]]+)?(?:\\<\\-\\s*)?\\bchan\\b(?:\\s*\\<\\-)?\\s*)+)?(?:[\\w\\.\\*\\[\\]]+)\\s*(?=\\}))",
+					"match": "(?:(?<=\\{)\\s*((?:(?:\\w+\\,\\s*)+)?(?:\\w+\\s+))((?:(?:\\s*(?:[\\*\\[\\]]+)?(?:\\<\\-\\s*)?\\bchan\\b(?:\\s*\\<\\-)?\\s*)+)?(?:[\\w\\.\\*\\[\\]]+))\\s*(?=\\}))",
 					"captures": {
 						"1": {
 							"patterns": [
@@ -2134,15 +2134,6 @@
 			"comment": "interface variable type fields",
 			"patterns": [
 				{
-					"comment": "interface method names",
-					"match": "\\b([A-Z][\\w]*)\\b(?=\\s*\\()",
-					"captures": {
-						"1": {
-							"name": "entity.name.method.go"
-						}
-					}
-				},
-				{
 					"include": "#support_functions"
 				},
 				{
@@ -2207,7 +2198,7 @@
 									"include": "#type-declarations"
 								},
 								{
-									"match": "(?:\\w+)",
+									"match": "\\w+",
 									"name": "entity.name.type.go"
 								}
 							]
